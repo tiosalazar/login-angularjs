@@ -1,0 +1,70 @@
+ <div class="row content-container" ng-init="usr.DatosModificar();" >
+            <!-- Main Content -->
+            <div class="container-fluid">
+                <div class="side-body">
+                    <div class="page-title">
+                       <span class="title" page-head  ng-bind="page_head"></span>
+                        <div class="description" page-description ng-bind="page_description" ></div>
+               
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 col-xs-12">
+                            <div class="card">
+                                <div class="card-header">
+                                    <div class="card-title">
+                                    <div class="title" table-head ng-bind="table_head"  ></div>
+                                    </div>
+                                </div>
+                      <div class="card-body">
+				                  <div class="box-content">
+                                            <div  ng-hide="usr.estadoIncorrecto();" class="alert  alert-danger ">
+                                              <button type="button" class="close" data-dismiss="alert">&times;</button>
+                                                   {{usr.mensaje}}
+                                              </div>
+                                             <div ng-hide="usr.estadoCorrecto();" class="alert alert-success  fresh-color text-center ">
+                                             <button type="button" class="close" data-dismiss="alert">&times;</button>
+                                              {{usr.mensaje}}
+                                             </div>
+                            <form class="form-horizontal"  enctype="multipart/form-data" ng-submit="usr.ModificarUsuario();" method="post" id="formulario-nuevo-usuario">
+						                      <fieldset>
+                                    <div class="control-group">
+                                    <div class="control-group">
+                                      <label class="control-label"  for="nombres">Nombres :</label>
+                                        <div class="controls">
+                                         <input class="input-large span4 focused"   ng-model="usr.DataUser.first_name" name="nombres" placeholder="Nombres" id="nombres" type="text" required="required">
+                                        </div>
+                                    </div>  
+                                     <div class="control-group">
+                                      <label class="control-label"   for="apellidos">Apellidos : </label>
+                                        <div class="controls">
+                                         <input class="input-large span4 focused"  name="apellidos" ng-model="usr.DataUser.last_name" placeholder="Apellidos" id="apellidos" type="text" required="required">
+                                        </div>
+                                    </div> 
+                                     <div class="control-group">
+                                      <label class="control-label"   for="email">Correo Eletrónico :</label>
+                                        <div class="controls">
+                                         <input class="input-large span4 focused" name="email" ng-model="usr.DataUser.email" placeholder="Correo Eletrónico" id="email" type="text" required="required">
+                                        </div>
+                                    </div>  
+                                     <div class="control-group">
+                                      <label class="control-label"   for="telefdno">Teléfono :</label>
+                                        <div class="controls">
+                                         <input class="input-large span4 focused"   name="telefono" ng-model="usr.DataUser.telephone" placeholder="Teléfono" id="telefdno" type="tel" required="required">
+                                        </div>
+                                    </div>                     
+                                                              
+          							  <div class="form-actions">
+                              <input  type="submit" class="btn btn-primary" value="Guardar Cambios">
+              								<button ui-sref="app.users" class="btn">Cancel</button>
+          							  </div>
+          							</fieldset>
+						         </form>
+				         </div>
+				  </div>
+		   </div><!--/card-->
+		</div><!--/col-->		
+	</div><!--/row-->
+
+ </div><!--/side-body-->			
+</div><!--/container-fluid-->
+</div><!--/content-container-->

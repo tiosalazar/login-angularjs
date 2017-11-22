@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="es" ng-app="appTesting">
+<head>
+    <meta charset="UTF-8">
+    <title page-title ng-bind="page_title"></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- RESET CSS-->
+     <link rel="stylesheet" href="./assets/css/resetear.css">
+     <!-- Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300,400' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&subset=latin,cyrillic-ext,latin-ext' rel='stylesheet' type='text/css'>
+    <link rel='stylesheet prefetch' href='http://fonts.googleapis.com/css?family=Montserrat:400,700'>
+     <!-- END Fonts -->
+    <!-- bower:css -->
+    <link rel="stylesheet" type="text/css" href="../bower_components/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="../bower_components/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="../bower_components/angular-datatables/dist/css/angular-datatables.min.css">
+     <!-- endbower -->
+ <!-- CSS App -->
+   
+    <link id="base-style"  type="text/css"  href="./assets/css/style-forms.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./assets/css/animate.min.css">
+     <link id="base-style-responsive"type="text/css" href="./assets/css/style-responsive.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/themes/flat-blue.css">
+    <link rel="stylesheet" type="text/css"  href="./assets/css/main.css">
+
+
+    
+</head>
+<body  >
+<div class="flat-blue">
+<div class="app-container">
+ <div class="row content-container">
+
+<div ui-view="app_header"></div>
+<div ui-view="app_menu"></div>
+<div ui-view></div>
+<div ui-view="app_footer"></div>
+
+</div>
+</div>
+</div>
+<!-- JS -->
+<script type="text/javascript" src="../bower_components/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" src="../bower_components/bootstrap/dist/js/bootstrap.js"></script>
+<script type="text/javascript" src="../bower_components/datatables/media/js/jquery.dataTables.min.js"></script>
+
+
+
+<!-- == dependencies == -->
+<script type="text/javascript" src="../bower_components/angular/angular.min.js"></script>
+<script type="text/javascript" src="../bower_components/angular-animate/angular-animate.min.js"></script>
+<script type="text/javascript" src="../bower_components/angular-bootstrap/ui-bootstrap.min.js"></script>
+<script type="text/javascript" src="../bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+<script type="text/javascript" src="../bower_components/oclazyload/dist/ocLazyLoad.min.js"></script>
+<script type="text/javascript" src="../bower_components/ng-cookies/dist/ng-cookies.min.js"></script>
+
+
+<script type="text/javascript" src="../bower_components/angular-datatables/dist/angular-datatables.min.js"></script>
+
+
+
+<!-- // modules // -->
+<script src="app.js"></script>
+<script src="app.state.js"></script>
+<script src="app.directives.js"></script>
+<script src="app.factories.js"></script>
+
+</body>
+</html>

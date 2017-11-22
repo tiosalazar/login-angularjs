@@ -1,0 +1,20 @@
+{
+  "name": "TestingApp",
+  "version": "0.0.0",
+  "description": "Testing Frontend - Alquemedia",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "angular": "~1.5.7",
+    "angular-ui-router": "~0.3.1",
+    "angular-animate": "~1.5.7",
+    "oclazyload": "~1.0.9",
+    "bootstrap": "~3.3.5",
+    "ng-cookies":"~1.1.1",
+    "font-awesome": "fontawesome#~4.4.0",
+    "datatables": "~1.10.12",
+    "angular-datatables":"~0.5.4",
+    "jquery": "~2.1.4",
+    "angular-bootstrap":"~2.0.0"
+  }
+}

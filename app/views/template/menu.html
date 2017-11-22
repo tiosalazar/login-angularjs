@@ -1,0 +1,33 @@
+
+<div class="side-menu sidebar-inverse">
+                    <nav class="navbar navbar-default" role="navigation">
+                        <div class="side-menu-container">
+                            <div class="navbar-header">
+                                <a class="navbar-brand" ui-sref="app.users" >
+                                    <div class="icon fa fa-graduation-cap"></div>
+                                    <div class="title">{{menu.nombre}} </div>
+                                </a>
+                                
+                            </div>
+
+                            <ul class="nav navbar-nav" >
+                    <li  ng-repeat="item in menu.items" class="panel panel-default dropdown" >
+                                    <a   class="dropdown-toggle" data-toggle="collapse"  role="button" href="{{item.accion}} ">
+                                        <span class="icon {{item.icono}}"></span><span class="title">{{item.name}}</span>
+                                    </a>
+                                    <!-- Dropdown -->
+                                    <div  ng-if="item.TieneHijos == '1' "  id="dropdown-element"  aria-expanded="true" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            <ul class="nav navbar-nav">
+                                                 <li ng-repeat="hijo in item.Hijos"  ><a ui-sref="{{hijo.accion}}" >{{hijo.name}}</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- /.navbar-collapse -->
+                    </nav>
+                </div>
